@@ -22,7 +22,7 @@ def load_model_from_drive():
     if not os.path.exists(model_path):
         file_id = "1vTShYm_6a4edn5H7sblMlpYvLOap9Naa"  # replace with your ID
         gdown.download(f"https://drive.google.com/uc?id={file_id}", model_path, quiet=False)
-    return load_model(model_path)
+    return load_model(model_path, compile=False)
 
 
 def get_grad_cam(model, image_array, layer_name="conv2d_2"):
