@@ -20,8 +20,8 @@ IMG_WIDTH, IMG_HEIGHT = 224, 224
 def load_model():
     if not os.path.exists("model.onnx"):
         url = f"https://drive.google.com/uc?id=1XBhsSrPACn7_3UzXUueANK_ETqRjee4e"
-        gdown.download(url, MODEL_PATH, quiet=False)
-    session = ort.InferenceSession(MODEL_PATH)
+        gdown.download(url, "model.onnx", quiet=False)
+    session = ort.InferenceSession("model.onnx")
     return session
 
 def preprocess_image(image):
