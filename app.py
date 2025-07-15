@@ -28,7 +28,7 @@ st.markdown("""
     }
     .stButton>button {
         background-color: #4CAF50;
-        color: white;
+        color: blue;
         font-weight: bold;
     }
     .css-1v0mbdj p {
