@@ -21,21 +21,50 @@ from PIL import Image
 IMG_WIDTH, IMG_HEIGHT = 224, 224
 st.markdown("""
     <style>
+    /* Background and font */
     .main {
         background-color: #c14c8a;
-        color: #333333;
+        color: white;
         font-family: 'Segoe UI', sans-serif;
     }
-    .stButton>button {
-        background-color: #4CAF50;
-        color: blue;
+
+    /* Headings */
+    h1, h2, h3, h4 {
+        color: black !important;
         font-weight: bold;
     }
-    .css-1v0mbdj p {
+
+    /* General text */
+    .stMarkdown p {
+        color: white !important;
         font-size: 18px;
     }
+
+    /* File uploader + image display area */
+    .block-container {
+        padding: 2rem 2rem;
+        border-radius: 12px;
+        background-color: #9e3370;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button styling */
+    .stButton > button {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: none;
+    }
+
+    /* Uploaded image display */
+    img {
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 
 @st.cache_resource
