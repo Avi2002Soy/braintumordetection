@@ -1,7 +1,7 @@
-streamlit
+streamlit==1.26.0
 onnxruntime
-opencv-python
 numpy
 Pillow
+opencv-python-headless
 matplotlib
 gdown
