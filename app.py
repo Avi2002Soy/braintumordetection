@@ -22,7 +22,7 @@ IMG_WIDTH, IMG_HEIGHT = 224, 224
 st.markdown("""
     <style>
     .main {
-        background-color: #f5f5f5;
+        background-color: #c14c8a;
         color: #333333;
         font-family: 'Segoe UI', sans-serif;
     }
