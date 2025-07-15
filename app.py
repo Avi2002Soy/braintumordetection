@@ -2,7 +2,12 @@
 #file_id = "1XBhsSrPACn7_3UzXUueANK_ETqRjee4e"
 
 import streamlit as st
-st.set_page_config(page_title="Brain Tumor Detection", layout="centered")
+st.set_page_config(
+    page_title="🧠 Brain Tumor Detection",
+    page_icon="🧠",
+    layout="centered",
+    initial_sidebar_state="auto"
+)
 
 import os
 import gdown
@@ -14,6 +19,23 @@ from PIL import Image
 
 # Constants
 IMG_WIDTH, IMG_HEIGHT = 224, 224
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f5f5f5;
+        color: #333333;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+    .css-1v0mbdj p {
+        font-size: 18px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 
 @st.cache_resource
